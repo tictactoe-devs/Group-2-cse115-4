@@ -1,4 +1,4 @@
-❌⭕ A classic two-player Tic-Tac-Toe game built entirely in C for a first-semester university group project. Designed with modularity, clean input validation, and real-time terminal rendering.
+❌⭕ A classic two-player Tic-Tac-Toe game. Designed with modularity, clean input validation, and real-time rendering.
 ---
 ## ✨ Features
 

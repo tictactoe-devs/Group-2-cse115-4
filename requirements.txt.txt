@@ -1,0 +1,2 @@
+GCC Compiler (C99 standard or higher)
+Standard Libraries: stdio.h, stdlib.h, stdbool.h

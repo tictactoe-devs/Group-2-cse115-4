@@ -6,7 +6,7 @@ int main()
 
     do {
         int t,k,d;
-        char n[10]= {"123456789"};
+        char n[10]= {"0123456789"};
         for(t=0; t<=9; t++)
         {
             printf("!!Classic Tic Tac Toe Game!!\n\n");

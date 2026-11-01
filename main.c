@@ -62,6 +62,32 @@ int main()
                     break;
                 
         }
+            if(t%2==0&&t<9)
+                {
+                    printf("Player (X) This is Your Turn: ", xn);
+                }
+                if(t%2!=0&&t<9)
+                {
+                    printf("Player (O) This is Your Turn: ", on);
+                }
+                scanf("%d", &d);
+
+                if (d > 0 && d < 10 && n[d] != 'o' && n[d] != 'x')
+                {
+                    if(t%2==0)
+                        n[d] = 'x';
+                    else
+                        n[d] = 'o';
+                }
+                else
+                {
+                    printf("Invalid Input\n");
+                   
+                    t--;
+                    continue;
+
+                }
+            
 
 
 

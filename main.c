@@ -90,13 +90,25 @@ int main()
             
 
 
-
+  }
+        printf("Would You Like to Play Again? (Y/N): ");
+        scanf(" %c", &yn);
 
 
 
     }
 
 
+
+while(yn=='y');
+
+printf("Final Score:\n");
+printf("Times player (X) Win: %d\n", xn, xw);
+printf("Times player (O) Win: %d\n", on, ow);
+printf("Number of Draw Matches: %d\n",dw);
+
+
+return 0;
 
 
 

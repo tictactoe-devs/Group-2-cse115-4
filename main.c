@@ -35,7 +35,7 @@ int main()
                 (n[3]==n[6] && n[6]==n[9] && n[9]=='o'))
 
             {
-                printf("Congratulations Player (O) Win the Match!!\n", on);
+                printf("Congratulations Player (O) Win the Match!!\n");
                 ow = ow + 1;
                 break;
             }

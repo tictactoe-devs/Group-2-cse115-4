@@ -3,13 +3,14 @@
 int main()
 {
     int xw=0, ow=0, dw=0;
+    char yn;
 
     do {
         int t,d;
         char n[10]= {"0123456789"};
         for(t=0; t<=9; t++)
         {
-            system("cls");
+            
             printf("!!Classic Tic Tac Toe Game!!\n");
             printf("     |     |     \n");
             printf("  %c  |  %c  |  %c  \n",n[1],n[2],n[3]);
@@ -51,7 +52,7 @@ int main()
                 (n[3]==n[6] && n[6]==n[9] && n[9]=='x'))
 
                 {
-                   printf("Congratulations Player (X) Win the Match!!\n", xn);
+                   printf("Congratulations Player (X) Win the Match!!\n");
                 xw = xw + 1;
                 break;
                 }
@@ -64,11 +65,11 @@ int main()
         }
             if(t%2==0&&t<9)
                 {
-                    printf("Player (X) This is Your Turn: ", xn);
+                    printf("Player (X) This is Your Turn: ");
                 }
                 if(t%2!=0&&t<9)
                 {
-                    printf("Player (O) This is Your Turn: ", on);
+                    printf("Player (O) This is Your Turn: ");
                 }
                 scanf("%d", &d);
 
@@ -103,8 +104,8 @@ int main()
 while(yn=='y');
 
 printf("Final Score:\n");
-printf("Times player (X) Win: %d\n", xn, xw);
-printf("Times player (O) Win: %d\n", on, ow);
+printf("Times player (X) Win: %d\n", xw);
+printf("Times player (O) Win: %d\n", ow);
 printf("Number of Draw Matches: %d\n",dw);
 
 

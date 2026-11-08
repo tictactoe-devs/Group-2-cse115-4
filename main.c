@@ -4,6 +4,12 @@ int main()
 {
     int xw=0, ow=0, dw=0;
     char yn;
+     char xn[50], on[50];
+    printf("***Welcome to Classic TIC TAC TOE GAME***\n");
+     printf("Enter Name of Player X: ");
+     scanf("%s", xn);
+     printf("Enter Name of Player O: ");
+     scanf("%s", on);
 
     do {
         int t,d;
@@ -37,7 +43,7 @@ int main()
                 (n[3]==n[6] && n[6]==n[9] && n[9]=='o'))
 
             {
-                printf("Congratulations Player (O) Win the Match!!\n");
+                printf("Congratulations %s (O) Win the Match!!\n", on);
                 ow = ow + 1;
                 break;
             }
@@ -54,7 +60,7 @@ int main()
                 (n[3]==n[6] && n[6]==n[9] && n[9]=='x'))
 
                 {
-                   printf("Congratulations Player (X) Win the Match!!\n");
+                   printf("Congratulations %s (X) Win the Match!!\n", xn);
                 xw = xw + 1;
                 break;
                 }
@@ -67,11 +73,11 @@ int main()
         }
             if(t%2==0&&t<9)
                 {
-                    printf("Player (X) This is Your Turn: ");
+                    printf("%s (X) This is Your Turn: ", xn);
                 }
                 if(t%2!=0&&t<9)
                 {
-                    printf("Player (O) This is Your Turn: ");
+                    printf("%s (O) This is Your Turn: ", on);
                 }
                 scanf("%d", &d);
 
@@ -106,8 +112,8 @@ int main()
 while(yn=='y');
 
 printf("Final Score:\n");
-printf("Times player (X) Win: %d\n", xw);
-printf("Times player (O) Win: %d\n", ow);
+printf("Number of Times %s (X) Win: %d\n", xn, xw);
+printf("Number of Times %s (O) Win: %d\n", on, ow);
 printf("Number of Draw Matches: %d\n",dw);
 
 

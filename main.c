@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 
 int main()
 {
@@ -16,7 +18,8 @@ int main()
         char n[10]= {"0123456789"};
         for(t=0; t<=9; t++)
         {
-            
+
+            system("cls");
             printf("===========================================================\n");
             printf("||            !!Classic Tic-Tac-Toe Game!!               ||\n");
             printf("===========================================================\n");
@@ -91,7 +94,7 @@ int main()
                 else
                 {
                     printf("Invalid Input\n");
-                   
+                   Sleep(2000);
                     t--;
                     continue;
 
